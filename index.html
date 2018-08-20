@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Super Mario RPG!</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	
+	
+</head>
+<body>
+	<header class="text-center">
+		<h1>Super Mario RPG!</h1>
+	</header>
+	<div class="container">
+		<div class="select text-center" id="select">
+			<h2>Click to Choose your Player</h2>
+			<div class="row" id="choosePlayer">
+			</div>
+		</div>
+		<div class="row">
+			<div class="character hide text-center col-md-6 col-xs-12">
+				<h3 class="top">Your Player</h3>
+				<div id="character">
+				</div>
+			</div>
+			<div class="enemies hide text-center col-md-6 col-xs-12">
+				<h3 class="top">Click to Choose Your Opponent</h3>
+				<ul id="enemies">
+				</ul>
+			</div>
+		</div>
+		<div class="attack hide text-center">
+			<h3 id="combat">Combat Area</h3>
+			<h4>Keep Clicking 'Attack' To Strike Your Opponent</h4>
+			<button class="btn btn-danger strike">Attack</button>
+			<h4 id="hit"></h4>
+			<h4 id="struck"></h4>
+		</div>
+		<div class="defender hide text-center">
+			<div id="defender">
+			</div>
+		</div>
+		<div class="reset hide text-center">
+			<button class="btn btn-primary redo">Reset</button>
+		</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script src="assets/javascript/game.js"></script>
+</body>
+</html>
