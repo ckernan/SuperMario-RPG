@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Luckiest+Guy);
+
+body {
+	font-family: 'Luckiest Guy', cursive;
+    background-image: url("../images/supermario64.png");
+    color: white;
+}
+
+h1 {
+	font-weight: bolder;
+	font-size: 55px;
+	margin-top: 10px;
+}
+
+h2 {
+	color: white;
+	font-size: 45px;
+	margin-bottom: 40px;
+}
+
+.name {
+	color: white;
+}
+
+.top {
+	margin-top: 0;
+}
+
+/*.pick {
+	margin: 25px;
+}*/
+
+.inline {
+	display: inline-block;
+}
+
+.players {
+	height: 115px;
+	width: 115px;
+	margin: 20px 20px 0 20px;
+	border: 5px solid #F0AD4E;
+}
+
+.progress {
+	margin-bottom: 0;
+	width: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.players:hover {
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.progress-bar {
+	color: white;
+}
+
+#combat {
+	margin-top: 0;
+}
+
+.strike {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		font-size: 35px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	h2 {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+
+	h3 {
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+
+	h4 {
+		font-size: 15px;
+		margin-bottom: 0;
+	}
+
+	.players {
+		margin: 5px 5px 0 5px;
+	}
+
+	.strike {
+		margin-bottom: 0;
+	}
+}
