@@ -101,8 +101,8 @@ $(document).ready(function() {
 			$('.defender').find('.progress-bar').text(defHlth);
 			$('#struck').text('You were counterattacked by ' + defName + ' for ' + defCtrAtk);
 			$('#hit').text('You attack ' + defName + ' for ' + heroAtk);
-			$('.player img').effect('pulsate');
-			$('.defender img').effect('pulsate');
+			$('.player img').effect('shake');
+			$('.defender img').effect('shake');
 			heroAtk += parseInt(playAtk);
 			if(playHlth/playMaxHlth*100 < 50) {
 				$('.player').find('.progress-bar').removeClass('bg-success').addClass('bg-warning');
@@ -121,20 +121,19 @@ $(document).ready(function() {
 				$('.defender').find('.progress-bar').text(defHlth);
 				$('#struck').text('You defeated ' + defName + '! Choose new opponent to fight.');
 				$('#hit').text('');
-				//$('.defender img').effect('explode');
 				$('#defender').empty();
 			}
 			if(playHlth <= 0) {
 				playHlth = 0;
 				$('.player').find('.progress-bar').text(playHlth);
-				//$('.player img').effect('explode');
 				$('.player').empty();
 				alert('YOU LOSE!');
 				$('.reset').removeClass('hide');
 			}
 		}
 		if($.trim($("#enemies").html())=='' && $.trim($("#defender").html()) =='' && $.trim($(".player").html()) != '') {
-			alert('YOU WIN!!');
+            alert('YOU WIN!!');
+            $('#struck').text('You defeated ' + defName + '! YOU WIN!!');
 			$('.reset').removeClass('hide');
 		}
 	});
