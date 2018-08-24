@@ -11,9 +11,9 @@ $(document).ready(function() {
 		{
 			id: "first",
 			name: "Mario",
-			health: 100,
-			atkPower: 9,
-			ctrAtkPower: 5,
+			health: 110,
+			atkPower: 12,
+			ctrAtkPower: 7,
 			pic: 'assets/images/mario.jpg'
 		},
 
@@ -21,8 +21,8 @@ $(document).ready(function() {
 			id: "second",
 			name: "Yoshi",
 			health: 130,
-			atkPower: 9,
-			ctrAtkPower: 7,
+			atkPower: 10,
+			ctrAtkPower: 6,
 			pic: 'assets/images/yoshi.jpg'
 				
 		},
@@ -30,9 +30,9 @@ $(document).ready(function() {
 		{
 			id: "third",
 			name: "Peach",
-			health: 150,
+			health: 160,
 			atkPower: 9,
-			ctrAtkPower: 7,
+			ctrAtkPower: 15,
 			pic: 'assets/images/peach.jpg'	
 		},
 
@@ -128,6 +128,7 @@ $(document).ready(function() {
 				$('.player').find('.progress-bar').text(playHlth);
 				$('.player').empty();
 				alert('YOU LOSE!');
+				$("#struck").text('You were defeated by ' + defName + '! YOU LOSE!')
 				$('.reset').removeClass('hide');
 			}
 		}
