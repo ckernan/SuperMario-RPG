@@ -3,19 +3,20 @@
 body {
 	font-family: 'Luckiest Guy', cursive;
     background-image: url("../images/supermario64.png");
-    color: white;
+	color: white;
+	background-size: 100% 880px;
+	background-repeat: no-repeat;
 }
-
-h1 {
-	font-weight: bolder;
-	font-size: 55px;
-	margin-top: 10px;
-}
+ img {
+	 margin-top: 10px;
+ }
 
 h2 {
-	color: white;
-	font-size: 45px;
+	color: #FCDB0E;
+	font-size: 30px;
+	margin-top: 15px;
 	margin-bottom: 40px;
+	text-shadow: -3px -3px 0 #EC0E39, 3px -3px 0 #EC0E39, -3px 3px 0 #EC0E39, 3px 3px 0 #EC0E39;
 }
 
 .name {
@@ -24,11 +25,10 @@ h2 {
 
 .top {
 	margin-top: 0;
+	color: #FCDB0E;
+	text-shadow: -3px -3px 0 #EC0E39, 3px -3px 0 #EC0E39, -3px 3px 0 #EC0E39, 3px 3px 0 #EC0E39;
+	
 }
-
-/*.pick {
-	margin: 25px;
-}*/
 
 .inline {
 	display: inline-block;
