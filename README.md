@@ -1,6 +1,6 @@
 # Super Mario RPG
 
-Super Mario themed role playing game that allows player to chose a character and battle the remaining enemy characters until they are all defeated or until the player's health points reach 0 or below.
+Super Mario themed role playing game that allows player to chose a character and battle the remaining enemy characters until they are all defeated or until the player's health points reach 0 or below. Access the deployed app [here](https://ckernan.github.io/SuperMario-RPG/).
 
 ## How it works
 
@@ -12,3 +12,13 @@ Each character in the game has 3 attributes: Health Points, Attack Power and Cou
 Each time the player attacks, their character's Attack Power increases by its base Attack Power. For example, if the base Attack Power is 6, each attack will increase the Attack Power by 6 (12, 18, 24, 30 and so on). The enemy character on the other hand, only has Counter Attack Power. Unlike the player's Attack Points, Counter Attack Power never changes. No characters in the game can heal or recover Health Points. A winning player must pick their characters wisely by first fighting an enemy with low Counter Attack Power. This will allow them to grow Attack Power and to take on enemies before they lose all of their Health Points. Healing options would mess with this dynamic. Players should be able to win and lose the game no matter what character they choose. The challenge should come from picking the right enemies, not choosing the strongest player.
 
 ## Preview
+
+![Super Mario RPG GIF](/assets/images/SuperMario-RPG.gif)
+
+## Built With
+
+* HTML
+* CSS
+* [Bootstrap](https://getbootstrap.com/)
+* [Javascript](https://www.javascript.com/)
+* [JQuery](https://jquery.com/)
